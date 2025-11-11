@@ -1,0 +1,15 @@
+// Imports
+@use '../../styles/_variables.scss' as *;
+
+// Estilos específicos
+.navbar-custom {
+    background-color: $light-color;
+    color: $primary-color;
+
+    .nav-link {
+        color: $primary-color;
+        &:hover {
+        color: lightern($primary-color, 15%);
+        }
+    }
+}
