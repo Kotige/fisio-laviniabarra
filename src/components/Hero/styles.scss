@@ -1,0 +1,14 @@
+@use "../../styles/_variables.scss" as *;
+
+#home {
+    background-color: $light-color;
+    color: $dark-text;
+    h1 {
+        font-size: clamp(2rem, 8vh, 4rem);
+        font-weight: 600;
+        span {
+            color: $light-text;
+            font-weight: 700;
+        }
+    }
+}
