@@ -1,9 +1,19 @@
 /* =========================
     Color variables
 ========================= */
-
-$dark-color: #006B5C;
 $light-color: #FEFEFE;
 $primary-color: #1BB8A6;
-$lighter-primary-color: #43F2DE;
 $darker-primary-color: #00A68F;
+
+
+// Degrade colors
+$degrade-start: $primary-color;
+$degrade-end: #43F2DE;
+
+// Text colors
+$light-text: $darker-primary-color;
+$dark-text: #006B4C;
+
+// Textbox colors
+$green-textbox: $darker-primary-color;
+$light-textbox: $light-color;
