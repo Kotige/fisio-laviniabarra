@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap'
+import './styles.scss';
 
 export default function About() {
     return (

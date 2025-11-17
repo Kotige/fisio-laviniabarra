@@ -6,7 +6,7 @@ export default function NavbarComponent() {
     return (
         <Navbar className='navbar-custom' expand="lg" sticky="top">
         <Container>
-            <Navbar.Brand href="#home">Lavinia Barra - Fisioterapeuta</Navbar.Brand>
+            <Navbar.Brand href="#home" className='d-none d-md-block'>Lavinia Barra - Fisioterapeuta</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto">

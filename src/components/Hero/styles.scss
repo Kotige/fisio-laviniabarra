@@ -1,6 +1,7 @@
 @use "../../styles/_variables.scss" as *;
 
 #home {
+    width: 99.5vw;
     background-color: $light-color;
     color: $dark-text;
     h1 {
@@ -10,5 +11,37 @@
             color: $light-text;
             font-weight: 700;
         }
+    }
+}
+
+.cont {
+    background-color: $primary-color;
+}
+
+.wave-container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+
+    .wave {
+        width: 100vw;
+        height: 220px; // ajuste da altura da onda
+        display: block;
+
+        .wave-path {
+        fill: $primary-color;
+        animation: waveMove 6s ease-in-out infinite alternate;
+        }
+    }
+}
+
+// animação suave da onda
+@keyframes waveMove {
+    0% {
+        d: path("M0,160 C360,260 720,60 1440,160 V320 H0 Z");
+    }
+    100% {
+        d: path("M0,160 C360,60 720,260 1440,160 V320 H0 Z");
     }
 }
