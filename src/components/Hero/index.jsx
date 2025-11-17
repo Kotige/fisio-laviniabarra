@@ -8,6 +8,7 @@ export default function Hero() {
         <section id='home' className="pt-5 text-center row d-flex justify-content-center align-items-center">
             <div className='col col-12 col-md-6 d-flex flex-column justify-content-center align-items-center'>
                 <img 
+                    id='logo-md'
                     className='w-75 d-block d-md-none'
                     src={logo} 
                     alt="Lavínia Barra - Físioterapeuta" 

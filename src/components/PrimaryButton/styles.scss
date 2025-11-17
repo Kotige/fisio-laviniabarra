@@ -9,7 +9,7 @@
     color: $light-color;
     padding: 0.5rem 1.5rem;
     font-weight: 600;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     &:hover {
         background-position: 100% 50%;
     }

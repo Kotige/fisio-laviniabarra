@@ -7,10 +7,15 @@
     h1 {
         font-size: clamp(2rem, 8vh, 4rem);
         font-weight: 600;
+        padding: 0 3rem;
         span {
             color: $light-text;
             font-weight: 700;
         }
+    }
+    #logo-md {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
