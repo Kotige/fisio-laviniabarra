@@ -1,7 +1,8 @@
 @use "../../styles/_variables.scss" as *;
 
 #home {
-    width: 99.5vw;
+    // width: 100vw;
+    padding: 0;
     background-color: $light-color;
     color: $dark-text;
     h1 {
@@ -31,7 +32,7 @@
 
     .wave {
         width: 100vw;
-        height: 220px; // ajuste da altura da onda
+        height: 420px; // ajuste da altura da onda
         display: block;
 
         .wave-path {

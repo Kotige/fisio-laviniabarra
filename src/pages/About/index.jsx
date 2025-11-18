@@ -3,8 +3,8 @@ import './styles.scss';
 
 export default function About() {
     return (
-        <section id='about' className='d-flex flex-column justify-content-center align-items-center'> 
-        <Container className="py-5 row d-flex">
+        <section id='about' className='d-flex row flex-column justify-content-center align-items-center container-fluid'> 
+        {/* <Container className="py-5  d-flex"> */}
             <div className='col col-12 col-md-6 d-flex flex-column justify-content-center align-items-center'>
                 <h2>Imagem</h2>
             </div>
@@ -31,8 +31,8 @@ export default function About() {
                     movimento cura!</span>
                 </p>
             </div>
-        </Container>
-        <Container className='d-flex row justify-content-center align-items-top'>
+        {/* </Container> */}
+        <div className='d-flex row justify-content-center align-items-top'>
             <div className='d-none d-lg-block col col-4 text-center' id='mission'>
                 <h3>Missão</h3>
                 <p>
@@ -52,7 +52,7 @@ export default function About() {
                     Empatia, atualização contínua, cuidado individualizado.
                 </p>
             </div>
-        </Container>
+        </div>
         </section>
     )
 }

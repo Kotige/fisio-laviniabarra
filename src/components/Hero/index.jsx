@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo-lavinia.png'
 
 export default function Hero() {
     return (
-        <section id='home' className="pt-5 text-center row d-flex justify-content-center align-items-center">
+        <section id='home' className="pt-5 text-center row d-flex justify-content-center align-items-center container-fluid">
             <div className='col col-12 col-md-6 d-flex flex-column justify-content-center align-items-center'>
                 <img 
                     id='logo-md'

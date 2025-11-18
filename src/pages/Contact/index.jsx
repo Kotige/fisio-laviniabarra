@@ -3,10 +3,10 @@ import { Container } from 'react-bootstrap'
 
 export default function Contact() {
     return (
-        <section id='contact'> 
-        <Container className="py-5">
+        <section id='contact' className='container-fluid'> 
+        <div className="py-5">
             <h2>Fale comigo:</h2>
-            <Container className="py-5 row d-flex">
+            <div className="py-5 row d-flex">
                 <div className='col col-12 col-md-6 d-flex flex-column justify-content-center align-items-center'>
                     <h2>Mapa</h2>
                 </div>
@@ -30,8 +30,8 @@ export default function Contact() {
                         CEP 36227-000
                     </a>
                 </div>
-            </Container>
-        </Container>
+            </div>
+        </div>
         </section>
     )
 }
