@@ -1,7 +1,7 @@
 import PrimaryButton from '../PrimaryButton';
 import './styles.scss';
 import laviniaLogo from '../../assets/images/lavinia-logo.png';
-import logo from '../../assets/images/logo-lavinia.png'
+import logo from '../../assets/images/logo-lavinia.png';
 
 export default function Hero() {
     return (

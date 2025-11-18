@@ -3,13 +3,18 @@
 
 // Estilos específicos
 .navbar-custom {
+    margin-top: 1.2rem;
     background-color: $light-color;
-    color: $primary-color;
+    // color: $primary-color;
+    font-size: 1.2rem;
 
     .nav-link {
         color: $primary-color;
         &:hover {
-        color: lightern($primary-color, 15%);
+        color: $light-primary-color;
         }
+        // display: flex;
+        // justify-content: right;
+        // align-items: center;
     }
 }

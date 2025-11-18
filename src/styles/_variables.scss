@@ -4,11 +4,12 @@
 $light-color: #FEFEFE;
 $primary-color: #1BB8A6;
 $darker-primary-color: #00A68F;
+$light-primary-color: #43F2DE;
 
 
 // Degrade colors
 $degrade-start: $primary-color;
-$degrade-end: #43F2DE;
+$degrade-end: $light-primary-color;
 
 // Text colors
 $light-text: $darker-primary-color;
