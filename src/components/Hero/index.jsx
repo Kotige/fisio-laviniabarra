@@ -38,7 +38,7 @@ export default function Hero() {
                 <img
                     src={detalheBranco} 
                     className='wave-img d-none'
-                    alt="" 
+                    alt="detalhe do background do site da fisioterapeuta Lavínia Barra" 
                 />
 
                 <svg className='wave' viewBox="0 0 1440 320" preserveAspectRatio="none">
