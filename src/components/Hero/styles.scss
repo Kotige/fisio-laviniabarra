@@ -100,7 +100,6 @@
         z-index: 1;
 
         .wave-path {
-            fill: $primary-color;
             animation: waveUpDown 5s ease-in-out infinite alternate;
         }
     }

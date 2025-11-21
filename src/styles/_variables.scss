@@ -18,3 +18,8 @@ $dark-text: #006B4C;
 // Textbox colors
 $green-textbox: $darker-primary-color;
 $light-textbox: $light-color;
+
+:root {
+    --primary-color: #{$primary-color};
+    --light-primary-color: #{$light-primary-color};
+}

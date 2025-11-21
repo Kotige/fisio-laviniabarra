@@ -1,6 +1,94 @@
 @import "../../styles/_variables.scss";
 
 #about {
-    background-color: $primary-color;
+    z-index: 0;
+    background: linear-gradient(to right, $light-primary-color, $primary-color);
     margin: 0;
+    padding: 0;
+    color: $light-color;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+        text-align: justify;
+        img {
+            width:60%;
+            margin-left: 5.7rem;
+            margin-top: -20rem;
+            z-index: 1;
+
+        }
+        p {
+            margin-left: -5rem;
+            margin-right: -2rem;
+            margin-top: -2rem;
+            margin-bottom: 4rem;
+        }
+        h2 {
+            margin-top: 2rem;
+            margin-left: -36.6rem;
+        }
+    }
+    span {
+        font-weight: 600;
+    }
+    h2 {
+        font-size: clamp(1rem, 7vh, 3rem);
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: clamp(1rem, 3vh, 2rem);
+    }
+}
+
+.box {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    border: 1px solid $light-color;
+    border-radius: 13%;
+}
+
+#small-box {
+    position: relative;
+    margin-left: .01rem;
+    width: 100vw;
+    margin-bottom: 2rem;
+
+    #mission, #values {
+        background-color: $light-color;
+        padding-inline: 2rem;
+        p {
+            color: $dark-text;
+        }
+        h3 {
+            color: $primary-color;
+        }
+    }
+    #vision {
+        background-color: $darker-primary-color;
+        h3, p {
+            margin: 0;
+            padding: 0;
+        color: $light-color;
+    }
+    }
+
+    #mission, #values, #vision {
+        border-radius: 50px;
+        width: 350px;
+        height: 210px;
+        margin-top: 1.5rem;
+        h3 {
+            margin: .9rem;
+            font-size: 2rem;
+        }
+        p {
+            padding: -1rem;
+            margin-left: .5rem;
+            margin-right: .5rem;
+            margin-top: 1rem;
+            font-weight: 400;
+        }
+    }
 }

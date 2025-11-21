@@ -42,9 +42,17 @@ export default function Hero() {
                 />
 
                 <svg className='wave' viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id='waveGradient' x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stopColor="#43F2DE" />
+                            <stop offset="100%" stopColor="#1BB8A6" />
+                        </linearGradient>
+                    </defs>
+                    
                     <path 
                         className='wave-path' 
                         d="M0,200 C300,250 600,150 900,200 C1200,250 1440,200 1440,200 L1440,320 L0,320 Z"
+                        fill='url(#waveGradient)'
                     />
                 </svg>
             </div>
