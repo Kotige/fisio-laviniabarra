@@ -37,7 +37,7 @@ export default function Hero() {
 
                 <img
                     src={detalheBranco} 
-                    className='wave-img d-none'
+                    className='wave-img d-none d-lg-block'
                     alt="detalhe do background do site da fisioterapeuta Lavínia Barra" 
                 />
 
