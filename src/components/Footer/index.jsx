@@ -1,5 +1,3 @@
-import { Container } from 'react-bootstrap'
-
 export default function Footer() {
     return (
         <footer className="bg-dark text-light py-4 mt-5 container-fluid">

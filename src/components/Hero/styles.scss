@@ -1,53 +1,115 @@
-@use "../../styles/_variables.scss" as *;
+@import "../../styles/_variables.scss";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+
 
 #home {
-    // width: 100vw;
+    overflow: hidden;
+    margin: 0;
     padding: 0;
+    position: relative;
     background-color: $light-color;
     color: $dark-text;
+    padding-bottom: 140px;
     h1 {
         font-size: clamp(2rem, 8vh, 4rem);
         font-weight: 600;
         padding: 0 3rem;
+        text-align: center;
         span {
             color: $light-text;
             font-weight: 700;
         }
     }
+
     #logo-md {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+    #home-img {
+        width: 60%;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .container-content {
+        @include media-breakpoint-up(lg) {
+            margin-top: -1rem;
+            margin-bottom: -6rem;
+
+            #home-img, #home-btn {
+                padding-bottom: 10rem;
+            }
+
+            #home-h1 {
+                margin-top: -5rem;
+            }
+        }
+    }
 }
 
-.cont {
-    background-color: $primary-color;
+#green-detail {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    margin-top: 8rem;
+    margin-right: -10rem;
+    z-index: 0;
+
 }
+
 
 .wave-container {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    // left: 0;
     width: 100vw;
+    height: 240px;
     overflow: hidden;
-    line-height: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    // background-image: url('../../assets/images/detalhe-branco.png');
+    // background-repeat: no-repeat;
+    // background-position: right bottom;
+    // background-size: auto 120%;
+
+    .wave-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        // height: 140%;
+        width: 25%;
+        overflow: hidden;
+        margin-right: -10rem;
+        margin-bottom: 2rem;
+        object-fit: cover;
+        z-index: 2;
+        pointer-events: none;
+    }
 
     .wave {
-        width: 100vw;
-        height: 420px; // ajuste da altura da onda
+        position: absolute;
+        // top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         display: block;
+        z-index: 0;
 
         .wave-path {
-        fill: $primary-color;
-        animation: waveMove 6s ease-in-out infinite alternate;
+            fill: $primary-color;
+            animation: waveUpDown 5s ease-in-out infinite alternate;
         }
     }
 }
 
 // animação suave da onda
-@keyframes waveMove {
-    0% {
-        d: path("M0,160 C360,260 720,60 1440,160 V320 H0 Z");
-    }
-    100% {
-        d: path("M0,160 C360,60 720,260 1440,160 V320 H0 Z");
-    }
+@keyframes waveUpDown {
+    0% { d: path("M0,160 C360,260 720,60 1440,160 V320 H0 Z"); } 
+    100% { d: path("M0,160 C360,60 720,260 1440,160 V320 H0 Z"); }
 }
