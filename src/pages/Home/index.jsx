@@ -2,6 +2,7 @@ import Hero from '../../components/Hero/index'
 import About from '../About/index'
 import Services from '../Services/index'
 import Contact from '../Contact/index'
+import Testimonials from '../testimonials'
 
 export default function Home() {
     return (
@@ -9,8 +10,8 @@ export default function Home() {
             <Hero />
             <About />
             <Services />
+            <Testimonials />
             <Contact />
-
         </>
     )
 }

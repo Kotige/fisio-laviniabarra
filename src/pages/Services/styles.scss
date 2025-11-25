@@ -1,0 +1,40 @@
+@import "../../styles/_variables.scss";
+
+
+#services {
+    background: linear-gradient(to right, $light-primary-color, $primary-color);
+    margin: 0;
+    padding: 0;
+    color: $light-color;
+    overflow: hidden;
+    #service-h2 {
+        display: flex;
+        border: 1px solid $light-color;
+        border-end-end-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-left: none;
+        margin-right: 5rem;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: clamp(1rem, 7vh, 3rem);
+            text-align: center;
+            margin-left: 7rem;
+            margin-right: 2rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            border-end-end-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            margin-right: 35rem;
+            padding: .5rem 0 1rem 0;
+            h2 {
+                margin-left: -3rem;
+            }
+        }
+    }
+
+    p {
+        font-size: clamp(1rem, 3vh, 2rem);
+    }
+}
