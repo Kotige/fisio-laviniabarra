@@ -12,7 +12,6 @@ export default function Services() {
             <div className='d-flex flex-row row justify-content-around mt-5 '>
                 <Gallery />
             </div>
-
             <img 
                 id='white-detail'
                 className='d-none d-lg-block'
