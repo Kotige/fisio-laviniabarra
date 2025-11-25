@@ -1,0 +1,77 @@
+@import "../../styles/_variables.scss";
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.gallery-card {
+    min-width: 18.75rem;
+    max-width: 18.75rem;
+    background: $darker-primary-color;
+    border-radius: 2rem;
+    border: 1px solid $light-color;
+    text-align: center;
+    flex-shrink: 0;
+
+    img {
+        width: 100%;
+        height: 50%;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+        padding: 0 1rem;
+        h3 {
+            font-weight: 600;
+            @include media-breakpoint-up(lg) {
+                line-height: 1;
+            }
+        }
+        p {
+            @include media-breakpoint-up(lg) {
+                padding: 1rem 0;
+                line-height: 1;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.gallery-card:nth-child(2) {
+    background-color: $light-color;
+    color: $darker-primary-color;
+    p {
+        color: $dark-text;
+    }
+    @include media-breakpoint-up(lg) {
+        margin: 0 4rem 0 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery-container {
+        justify-content: center;
+        overflow-x: visible;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-container {
+        scroll-snap-type: x mandatory;
+    }
+
+    .gallery-card {
+        scroll-snap-align: center;
+    }
+}
