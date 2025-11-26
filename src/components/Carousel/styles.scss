@@ -1,0 +1,131 @@
+@import "../../styles/_variables.scss";
+
+.my-carousel * {
+    box-sizing: border-box;
+}
+
+/* Wrapper */
+.my-carousel {
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Inner controla layout; usa flex mas com fallback para empilhar em telas pequenas */
+.carousel-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: nowrap; /* forçar lado a lado quando espaço suficiente */
+}
+
+/* LADO ESQUERDO - imagem */
+.carousel-left {
+    flex: 0 0 48%; /* ocupa ~48% (evita 50% exato para gap) */
+    max-width: 48%;
+}
+
+.carousel-left img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* LADO DIREITO - controles + texto */
+.carousel-right {
+    flex: 1 1 52%;
+    max-width: 52%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+/* BOLINHAS acima do texto */
+.dots {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    padding-bottom: 0.25rem;
+}
+
+/* Estilo das bolinhas */
+.dot {
+    margin: 1rem .5rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $light-color; /* verde inativo */
+    border: 1px solid $dark-text;
+    padding: 0;
+    cursor: pointer;
+    transition: transform .18s ease, background-color .18s ease, border-color .18s ease;
+    box-shadow: none;
+}
+
+/* estado ativo: branca com contorno verde */
+.dot.active {
+    background-color: $darker-primary-color;
+    border-color: $dark-text;
+}
+
+/* hover acessível */
+.dot:focus,
+.dot:hover {
+    transform: scale(1.15);
+    outline: none;
+}
+
+/* Texto grande à direita */
+.text-wrap {
+    /* limita largura de linha pra leitura; permita scroll vertical se o texto for muito grande */
+    max-height: 400px;
+    overflow: auto;
+    padding-right: 0.5rem;
+}
+
+.text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: $dark-text;
+    text-align: justify;
+    margin: 0;
+}
+
+/* RESPONSIVO: empilha em telas pequenas */
+@media (max-width: 860px) {
+    .carousel-inner {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .carousel-left,
+    .carousel-right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .text-wrap {
+        max-height: none; /* deixa o texto crescer naturalmente */
+    }
+
+    .dots {
+        justify-content: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+}
+
+/* Fade suave */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.25s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}

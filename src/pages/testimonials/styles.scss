@@ -2,4 +2,14 @@
 
 #testimonials {
     overflow: hidden;
+    z-index: 0;
+    // align-items: center;
+    // justify-content: center;
+    .div-btn {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
 }
