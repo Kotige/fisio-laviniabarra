@@ -1,0 +1,133 @@
+@import "../../styles/_variables.scss";
+
+#contact {
+            font-family: "Adamina", serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -4rem;
+
+    h2 {
+        font-size: clamp(1rem, 7vh, 3rem);
+        margin-top: 4rem;
+        color: $darker-primary-color;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+            margin-left: 5rem;
+            margin-bottom: -2rem;
+        }
+    }
+
+    .map-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: -5rem;
+            margin-top: 5rem;
+        }
+
+        .contact-lg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .links {
+            width: 60%;
+            align-items: center;
+            text-align: center;
+            @include media-breakpoint-up(lg) {
+                align-items: start;
+                align-items: left;
+                text-align: left;
+                font-size: 1.3rem;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $dark-text;
+            .icon {
+                color: $darker-primary-color;
+            }
+        }
+        a:last-of-type {
+            margin: 2rem 0;
+            @include media-breakpoint-up(lg) {
+                margin: 2rem 0;
+            }
+        }
+    }
+
+    .map-mobile {
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    .map-lg {
+        margin-left: 7rem;
+        height: 400px;
+        width: 600px;
+        border-radius: 20px;
+    }
+
+    .wave-container {
+    position: relative;
+    bottom: 0;
+    // left: 0;
+    width: 100vw;
+    height: 240px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+
+    // background-image: url('../../assets/images/detalhe-branco.png');
+    // background-repeat: no-repeat;
+    // background-position: right bottom;
+    // background-size: auto 120%;
+
+    .wave-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 40%;
+        // height: 140%;
+        width: 25%;
+        overflow: hidden;
+        margin-right: -10rem;
+        margin-bottom: -5rem;
+        object-fit: cover;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 1;
+
+        .wave-path {
+            animation: waveUpDown 5s ease-in-out infinite alternate;
+        }
+    }
+}
+
+// animação suave da onda
+    @keyframes waveUpDown {
+        0% { d: path("M0,160 C360,260 720,60 1440,160 V320 H0 Z"); } 
+        100% { d: path("M0,160 C360,60 720,260 1440,160 V320 H0 Z"); }
+    }
+}

@@ -24,7 +24,7 @@ export default function Carousel() {
     const [index, setIndex] = useState(0);
 
     return (
-        <section className="my-carousel mx-5" aria-label="Carousel de imagem e texto">
+        <section className="my-carousel mx-lg-5" aria-label="Carousel de imagem e texto">
         <div className="carousel-inner">
             <div className="carousel-left">
                 <img src={items[index].img} alt={`item-${index + 1}`} />
@@ -43,7 +43,7 @@ export default function Carousel() {
                         ))}
                     </div>
 
-                    <div className="text-wrap mx-5">
+                    <div className="text-wrap mx-lg-5">
                         <p className="text">{items[index].text}</p>
                     </div>
                 </div>

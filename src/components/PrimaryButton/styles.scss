@@ -1,6 +1,7 @@
 @import "../../styles/_variables.scss";
 
 .primary-button {
+    font-family: "Adamina", serif;
     border: none;
     background: linear-gradient(45deg, $degrade-end, $degrade-start);
     background-size: 200% 200%;
