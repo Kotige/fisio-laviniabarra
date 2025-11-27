@@ -1,1 +1,21 @@
 @import "../../styles/_variables.scss";
+
+@import "../../styles/_variables.scss";
+
+.secondary-button {
+    font-family: "Adamina", serif;
+    border: none;
+    width: fit-content;
+    padding: .5rem 1rem;
+    background-color: $light-color;
+    font-weight: 600;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
+    a:hover {
+        color: $light-primary-color;
+    }
+}

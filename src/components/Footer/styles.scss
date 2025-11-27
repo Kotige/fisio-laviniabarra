@@ -3,4 +3,13 @@
 #footer {
     font-family: "Adamina", serif;
     background: linear-gradient(to right, $light-primary-color, $primary-color);
+    
+
+    .modv {
+        width: 35%;
+        margin-bottom: 1rem;
+        @include media-breakpoint-up(lg) {
+            width: 15%;
+        }
+    }
 }

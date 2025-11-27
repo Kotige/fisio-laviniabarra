@@ -3,6 +3,7 @@ import './styles.scss';
 import Gallery from '../../components/Gallery';
 import detalheVerde from '../../assets/images/detalhe-verde.png';
 import detalheBranco from '../../assets/images/detalhe-branco.png';
+import SecondaryButton from '../../components/SecondaryButton';
 
 export default function Services() {
     return (
@@ -11,6 +12,7 @@ export default function Services() {
             <div id='service-h2'><h2>Como posso ajudar você?</h2></div>
             <div className='d-flex flex-row row justify-content-around mt-5 '>
                 <Gallery />
+                <SecondaryButton />
             </div>
             <img 
                 id='white-detail'

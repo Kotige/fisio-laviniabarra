@@ -19,11 +19,12 @@ export default function Contact() {
 
             <div className="py-5 row d-flex contact-lg">
                 <div className='col col-12 col-md-6 d-flex flex-column links'>
-                    <a href="https://wa.me/5532998148706" className="d-inline-flex align-items-center">
+                    <a href="https://wa.me/5532998148706?      text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20com%20voc%C3%AA." 
+                    className="d-inline-flex align-items-center" target='_blank'>
                         <Icon name="whatsapp" className="me-2 fs-4 icon" />
-                        (32) 9814-8706
+                        (32) 99814-8706
                     </a>
-                    <a href="mailto:contatofisiolavinia@gmail.com" className='d-inline-flex align-items-center'>
+                    <a href="mailto:contatofisiolavinia@gmail.com" className='d-inline-flex align-items-center' target='_blank'>
                         <Icon name="instagram" className="me-2 fs-4 icon" /> @fisiolaviniabarra
                     </a>
                     <a href="mailto:contatofisiolavinia@gmail.com" className='d-inline-flex align-items-center'>

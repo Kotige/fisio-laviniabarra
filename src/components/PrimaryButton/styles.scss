@@ -9,8 +9,12 @@
     transition: background-position 0.5s ease;
     color: $light-color;
     // padding: .5rem 1.5rem;
-    font-weight: 600;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 400;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    a {
+        text-decoration: none;
+        color: $light-color;
+    }
     &:hover {
         background-position: 100% 50%;
     }

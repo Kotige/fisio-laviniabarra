@@ -18,7 +18,8 @@
         align-items: center;
         justify-content: center;
         h2 {
-            font-size: clamp(1rem, 7vh, 3rem);
+            font-size: clamp(1rem, 6vh, 3rem);
+            font-weight: 600;
             text-align: center;
             margin-left: 7rem;
             margin-right: 2rem;
@@ -28,7 +29,7 @@
             border-end-end-radius: 1.5rem;
             border-top-right-radius: 1.5rem;
             margin-right: 35rem;
-            padding: .5rem 0 1rem 0;
+            padding: 1rem 0 1rem 0;
             h2 {
                 margin-left: -3rem;
             }
@@ -36,7 +37,7 @@
     }
 
     p {
-        font-size: clamp(1rem, 3vh, 2rem);
+        font-size: clamp(1rem, 2vh, 2rem);
     }
 
     #white-detail {
@@ -57,7 +58,7 @@
     bottom: 0;
     // left: 0;
     width: 100vw;
-    height: 240px;
+    height: 15rem;
     overflow: hidden;
     pointer-events: none;
     z-index: 0;

@@ -43,7 +43,7 @@
         p {
             @include media-breakpoint-up(lg) {
                 padding: 1rem 0;
-                line-height: 1;
+                line-height: 1.5;
                 font-size: 1rem;
             }
         }

@@ -7,12 +7,19 @@
     margin-top: 1.2rem;
     background-color: $light-color;
     // color: $primary-color;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     .nav-link {
-        color: $primary-color;
+        color: $primary-color !important;
         &:hover {
-        color: $light-primary-color;
+        color: $light-primary-color !important;
         }
+    }
+
+    .nav-link.active,
+    .nav-link:focus,
+    .nav-link:active {
+        color: $primary-color !important;  // impede a mudança de cor
+        text-decoration: none !important;
     }
 }
